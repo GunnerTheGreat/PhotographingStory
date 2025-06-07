@@ -46,14 +46,14 @@
   backdrop-filter: blur(10.9px);
   -webkit-backdrop-filter: blur(10.9px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  opacity: 0; /* Start invisible */
-  transform: translateY(20px); /* Start slightly below */
+  opacity: 0; 
+  transform: translateY(20px); 
   transition: opacity 0.3s ease, transform 0.3s ease;
   width: 1000px;
 }
 .overlay.active .overlay-content {
   opacity: 1;
-  transform: translateY(0); /* Move to normal position */
+  transform: translateY(0); 
 }
 .image-container {
   flex: 1;
@@ -170,7 +170,7 @@ h1,.sub {
   right: 10px;
 }
 
-/* Hide buttons on desktop (optional) */
+
 @media (min-width: 769px) {
   .nav-btn {
     display: none;
@@ -178,7 +178,7 @@ h1,.sub {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem; /* Smaller font size for mobile */
+    font-size: 2.5rem; 
   }
 }
 .horizontal-scroll-wrapper {
