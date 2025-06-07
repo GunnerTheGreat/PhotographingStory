@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target.classList.contains('overlay') || e.target.classList.contains('close-btn')) {
         overlay.classList.remove('active');
   
-        // Wait for the transition to complete before resetting content
+        
         setTimeout(() => {
           overlayImage.src = '';
           overlayTitle.textContent = '';
           overlayDescription.textContent = '';
-        }, 300); // Match the transition duration
+        }, 300); 
       }
     });
   
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       updateOverlay(currentIndex);
     });
   
-    // Optional: Keyboard navigation for desktop
+    
     document.addEventListener('keydown', (e) => {
       if (overlay.classList.contains('active')) {
         if (e.key === 'ArrowLeft') {
